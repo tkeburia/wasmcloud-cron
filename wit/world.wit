@@ -1,0 +1,6 @@
+package wasmcloud:cron;
+
+interface cron {
+  use types.{joke};
+  timed-invoke: func(input: u64) -> result<(), string>;
+}
